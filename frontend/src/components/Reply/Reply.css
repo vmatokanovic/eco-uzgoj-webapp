@@ -1,0 +1,15 @@
+.reply-container .comment-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media only screen and (max-width: 750px) {
+  .reply-container .comment-details {
+    align-items: flex-start;
+  }
+
+  .reply-container .delete-btn {
+    align-self: flex-end;
+  }
+}

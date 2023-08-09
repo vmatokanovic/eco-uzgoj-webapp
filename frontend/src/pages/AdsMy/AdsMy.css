@@ -1,0 +1,33 @@
+.my-ads-page-container {
+  max-width: 130rem;
+  margin: 0 auto;
+  padding: 5rem 1rem;
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+}
+
+.my-filters-container {
+  width: 25%;
+}
+
+.my-ads-container {
+  width: 75%;
+}
+
+@media only screen and (max-width: 1040px) {
+  .my-ads-page-container {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .my-ads-container {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .my-filters-container {
+    width: 90%;
+  }
+}

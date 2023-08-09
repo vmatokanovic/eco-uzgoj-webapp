@@ -1,0 +1,49 @@
+.search-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3rem;
+  overflow: visible;
+}
+
+.search-input-container {
+  /* background-color: blueviolet; */
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
+}
+.search-input {
+  background-color: #eaf7ee;
+  margin: 0;
+  font-family: "Poppins";
+  font-size: 1.6rem;
+  height: 100%;
+  outline: none;
+  border: none;
+  /* width: 100%; */
+  border-radius: 0 1rem 1rem 0;
+  font-size: 1.6rem;
+}
+
+.search-input:focus {
+  background-color: #fff;
+  box-shadow: 0 0 3px #2aab59 inset;
+}
+
+.price-input::placeholder {
+  color: #95d5ac;
+}
+
+.search-icon-container {
+  background-color: #2aab59;
+  border-radius: 1rem 0 0 1rem;
+}
+
+.material-symbols-outlined {
+  font-size: 3.2rem;
+  padding: 1rem;
+}
+
+.search-container .material-symbols-outlined {
+  color: #fff;
+}

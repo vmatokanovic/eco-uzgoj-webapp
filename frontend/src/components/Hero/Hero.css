@@ -1,0 +1,52 @@
+.planting-animation-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 9.6rem;
+  align-items: center;
+}
+
+.hero-heading {
+  color: #269a50;
+  font-size: 3.6rem;
+  margin-bottom: 2.4rem;
+  line-height: 1.2;
+
+  background-image: linear-gradient(45deg, #269a50, #46c976);
+  background-size: 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+
+.hero-description {
+  font-size: 2rem;
+  line-height: 1.6;
+  margin-bottom: 4.8rem;
+}
+
+.get-started-btn:link,
+.get-started-btn:visited {
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  padding: 1.2rem 2.4rem;
+  border-radius: 1rem;
+  color: #fff;
+  background-color: #2aab59;
+}
+
+.get-started-btn:hover,
+.get-started-btn:active {
+  background-color: #269a50;
+}
+
+.hero-image-box img {
+  max-width: 30rem;
+}

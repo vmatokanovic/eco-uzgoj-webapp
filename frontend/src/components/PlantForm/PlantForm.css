@@ -1,0 +1,4 @@
+.ad-form-button-publish:disabled[disabled] {
+  background-color: #bfe6cd;
+  cursor: not-allowed;
+}

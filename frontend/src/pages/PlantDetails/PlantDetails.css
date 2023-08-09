@@ -1,0 +1,166 @@
+.plant-details-page-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 130rem;
+  margin: 0 auto;
+  padding: 5rem 1rem;
+}
+
+.plant-name-container {
+  text-align: center;
+  font-size: 4.8rem;
+  font-weight: 600;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  color: #2aab59;
+  /* background-color: bisque; */
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #cacaca;
+}
+
+.plant-image-description-container {
+  display: flex;
+  /* background-color: bisque; */
+  gap: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #cacaca;
+}
+.plant-image-container {
+  display: flex;
+  width: 50%;
+  height: 50rem;
+  border-right: 1px solid #cacaca;
+  overflow: hidden;
+}
+
+.plant-image-container img {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  object-fit: contain;
+}
+
+.plant-description-container {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  width: 50%;
+  gap: 2rem;
+}
+
+.plant-category {
+  width: fit-content;
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  border: 1px solid #2aab59;
+}
+
+.plant-description-text {
+  font-size: 1.8rem;
+  line-height: 1.4;
+}
+
+.plant-farming-method-container {
+  color: #f5ebe0;
+  background-color: #333;
+  font-size: 1.8rem;
+  line-height: 1.4;
+  letter-spacing: 1px;
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+.plant-farming-method-container h2 {
+  color: #2aab59;
+}
+
+.comments-container {
+  background-color: #eaf7ee;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.comments-section-container {
+  max-width: 75rem;
+  margin: 0 auto;
+  padding-inline: 1rem;
+}
+
+.comments-section {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 4rem 0;
+}
+
+.post-comment-container {
+  background-color: #fff;
+  border-radius: 1rem;
+  padding: 2rem;
+}
+
+.post-comment-btn {
+  background-color: #2aab59;
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 1rem;
+  padding: 1rem 2rem;
+}
+
+.post-comment-btn:hover {
+  background-color: #269a50;
+  cursor: pointer;
+}
+
+.comment-textarea {
+  font-size: 1.6rem;
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+  resize: none;
+  border: none;
+  border: 2px solid #eaf7ee;
+  border-radius: 1rem;
+  padding: 2rem;
+}
+
+.comment-textarea:focus {
+  outline-color: #2aab59;
+}
+
+.comments-disabled-container {
+  text-align: center;
+  font-size: 2.4rem;
+  margin-bottom: 2rem;
+  line-height: 1.2;
+}
+
+.no-comments {
+  padding-top: 2rem;
+  color: #cacaca;
+}
+
+.comments-section-container .register-link {
+  font-weight: 600;
+  color: #269a50;
+}
+
+@media only screen and (max-width: 1040px) {
+  .plant-image-description-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .plant-image-container {
+    border: none;
+  }
+
+  .plant-description-container {
+    width: 100%;
+  }
+}

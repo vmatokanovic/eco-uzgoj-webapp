@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap");
+
+.login-container {
+  margin-top: 5rem;
+}
+
+.login-card {
+  width: 45rem;
+  margin: auto;
+  background-color: #fff;
+
+  padding: 4rem;
+  border-radius: 10px;
+  border: 2px solid #eaeaee;
+  position: relative;
+}
+
+.login-card-logo {
+  margin-bottom: 20px;
+}
+
+.login-card-logo img {
+  width: 30rem;
+}
+
+.login-card-logo,
+.login-card-header,
+.login-card-footer {
+  text-align: center;
+}
+
+.login-card a {
+  text-decoration: none;
+  color: #00b23e;
+}
+
+.register-link {
+  text-decoration: none;
+  color: #00b23e;
+}
+
+.login-card-header {
+  margin-bottom: 3rem;
+}
+
+.login-card-header h1 {
+  font-size: 3.2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.login-card-header p {
+  font-size: 1.2rem;
+}
+
+.login-card-form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.form-item {
+  display: flex;
+  align-items: center;
+}
+
+/* .login-card-form .checkbox {
+  background-color: aquamarine;
+  box-sizing: border-box;
+  align-items: center;
+  gap: 7px;
+} */
+
+.login-card-footer {
+  margin-top: 15px;
+  font-size: 1.2rem;
+}
+
+.login-card-form .form-input {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  margin-left: 10px;
+  font-size: 1.6rem;
+  border: none;
+  outline: none;
+  background-color: #eaf7ee;
+  padding: 10px 15px;
+  border-radius: 1rem;
+  width: 100%;
+  /* box-shadow: 0 0 2px #cacaca inset; */
+}
+
+.login-card-form .form-input::placeholder {
+  color: #95d5ac;
+  font-weight: 300;
+}
+
+.form-input:focus {
+  background-color: #fff;
+  box-shadow: 0 0 3px #2aab59 inset;
+}
+
+.login-card-form button {
+  background: #2aab59;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: all ease 200ms;
+}
+
+.login-card-form button:hover {
+  background-color: #269a50;
+  cursor: pointer;
+}
+
+.login-card-form button:disabled[disabled] {
+  background-color: #bfe6cd;
+}
+
+@media only screen and (max-width: 460px) {
+  .login-card {
+    width: 100%;
+    padding: 1rem;
+    background-color: transparent;
+    border: none;
+  }
+
+  .login-card-form button {
+    font-size: 2.4rem;
+  }
+}

@@ -1,0 +1,13 @@
+.hero-container {
+  border-bottom: 1px solid #cacaca;
+}
+
+.benefits-container {
+  background-color: #fff;
+}
+
+.home-page {
+  max-width: 130rem;
+  margin: 0 auto;
+  padding: 5rem 0;
+}

@@ -1,0 +1,152 @@
+.ad-text-input {
+  height: 30rem;
+  border-radius: 1rem;
+  border: 1px solid #cacaca;
+  margin-bottom: 2rem;
+}
+
+.img-add-form {
+  display: flex;
+  gap: 4rem;
+}
+
+.uploaded-images-container {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.uploaded-images-thumbnail {
+  border-radius: 1rem;
+  border: 1px solid #cacaca;
+  object-fit: cover;
+}
+
+.add-img-button {
+  background: #fff;
+  height: 4.5rem;
+  color: #2aab59;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border: 1px solid #2aab59;
+}
+.add-img-button:hover {
+  background-color: #eaf7ee;
+  cursor: pointer;
+}
+
+.upload-img-button {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  color: #2aab59;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 12rem;
+  width: 12rem;
+  border-radius: 1rem;
+  border: 1px solid #2aab59;
+}
+
+.upload-img-button.error {
+  border: 1px solid red;
+}
+
+.upload-img-button:hover {
+  cursor: pointer;
+  background-color: #eaf7ee;
+}
+
+.create-ad-form h1 {
+  font-size: 3.2rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #00b23e;
+  margin-bottom: 5rem;
+}
+
+.create-ad-form h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #00b23e;
+  line-height: 1.5;
+}
+
+.create-ad-form p {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.create-ad-form textarea {
+  height: 30rem;
+  padding: 1rem;
+  resize: none;
+}
+
+.create-ad-form select {
+  padding: 1rem;
+}
+
+.ad-form-input {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  margin-bottom: 2rem;
+  font-size: 1.6rem;
+  border: none;
+  outline: none;
+  background-color: #fff;
+  border-radius: 1rem;
+  width: 100%;
+  box-shadow: 0 0 2px #cacaca inset;
+}
+
+.ad-form-input::placeholder {
+  color: #c0c0c0;
+}
+
+.ad-form-input:focus {
+  background-color: #f0f0f0;
+  box-shadow: 0 0 2px #cacaca inset;
+}
+
+.small {
+  max-width: 30rem;
+}
+
+.ad-form-button-publish {
+  width: 100%;
+  font-size: 1.8rem;
+  background: #2aab59;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.ad-form-button-publish:hover {
+  background-color: #269a50;
+  cursor: pointer;
+}
+
+.quill-container .ql-container {
+  border-radius: 0 0 1rem 1rem;
+  height: 30rem;
+  margin-bottom: 2rem;
+}
+
+.quill-container .ql-editor {
+  font-family: "Poppins", sans-serif;
+  border-radius: 0 0 1rem 1rem;
+  height: 30rem;
+}
+
+.quill-container .ql-toolbar {
+  border-radius: 1rem 1rem 0 0;
+}

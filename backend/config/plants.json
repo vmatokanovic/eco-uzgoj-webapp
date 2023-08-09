@@ -1,0 +1,296 @@
+[
+  {
+    "name": "Jabuka",
+    "img": "https://pngfre.com/wp-content/uploads/apple-png-image.jpg",
+    "description": "Jabuka je slatka",
+    "category": "Voce"
+  },
+  {
+    "name": "Kamilica",
+    "img": "https://azena.hr/wp-content/uploads/2018/02/kamilica.png",
+    "description": "Kamilica je ljekovita",
+    "category": "Ljekovito"
+  },
+  {
+    "name": "Lavanda",
+    "img": "https://static.vecteezy.com/system/resources/thumbnails/016/536/685/small/watercolor-lavender-flower-clip-art-png.png",
+    "description": "Lavanda opis",
+    "category": "Aromatično"
+  },
+  {
+    "name": "Rajčica",
+    "img": "https://biorajcica.podravka.hr/wp-content/themes/bio-rajcica/assets/images/hero/cijela-rajcica.png",
+    "description": "Rajcica opis",
+    "category": "Povrce"
+  },
+  {
+    "name": "Ječam",
+    "img": "https://sanela.info/wp/blog/08/wp-content/uploads/2015/01/jecam.png",
+    "description": "Ječam opis neki",
+    "category": "Zitarice"
+  },
+  {
+    "name": "Kruška",
+    "img": "https://static.thenounproject.com/png/3597303-200.png",
+    "description": "Kruška je sočna",
+    "category": "Voce"
+  },
+  {
+    "name": "Bosiljak",
+    "img": "https://static.thenounproject.com/png/3325113-200.png",
+    "description": "Bosiljak je aromatičan",
+    "category": "Aromatično"
+  },
+  {
+    "name": "Mrkva",
+    "img": "https://static.thenounproject.com/png/4657663-200.png",
+    "description": "Mrkva je hrskava",
+    "category": "Povrce"
+  },
+  {
+    "name": "Peršin",
+    "img": "https://static.thenounproject.com/png/1485073-200.png",
+    "description": "Peršin je zdrav",
+    "category": "Ljekovito"
+  },
+  {
+    "name": "Kukuruz",
+    "img": "https://static.thenounproject.com/png/2855020-200.png",
+    "description": "Kukuruz je žitarica",
+    "category": "Zitarice"
+  },
+  {
+    "name": "Naranča",
+    "img": "https://static.thenounproject.com/png/2012556-200.png",
+    "description": "Naranča je sočna i slatka",
+    "category": "Voce"
+  },
+  {
+    "name": "Ružmarin",
+    "img": "https://static.thenounproject.com/png/2106714-200.png",
+    "description": "Ružmarin je aromatičan",
+    "category": "Aromatično"
+  },
+  {
+    "name": "Krastavac",
+    "img": "https://static.thenounproject.com/png/2094154-200.png",
+    "description": "Krastavac je osvježavajući",
+    "category": "Povrce"
+  },
+  {
+    "name": "Aloe Vera",
+    "img": "https://static.thenounproject.com/png/2037504-200.png",
+    "description": "Aloe Vera je ljekovita",
+    "category": "Ljekovito"
+  },
+  {
+    "name": "Riža",
+    "img": "https://static.thenounproject.com/png/1909948-200.png",
+    "description": "Riža je hranjiva žitarica",
+    "category": "Zitarice"
+  },
+  {
+    "name": "Jagoda",
+    "img": "https://static.thenounproject.com/png/3398682-200.png",
+    "description": "Jagoda je slatka i sočna",
+    "category": "Voce"
+  },
+  {
+    "name": "Menta",
+    "img": "https://static.thenounproject.com/png/1613798-200.png",
+    "description": "Menta je aromatična",
+    "category": "Aromatično"
+  },
+  {
+    "name": "Tikvica",
+    "img": "https://static.thenounproject.com/png/4647170-200.png",
+    "description": "Tikvica je ukusno povrće",
+    "category": "Povrce"
+  },
+  {
+    "name": "Kantarion",
+    "img": "https://static.thenounproject.com/png/3117626-200.png",
+    "description": "Kantarion je ljekovita biljka",
+    "category": "Ljekovito"
+  },
+  {
+    "name": "Pšenica",
+    "img": "https://static.thenounproject.com/png/1235085-200.png",
+    "description": "Pšenica je važna žitarica",
+    "category": "Zitarice"
+  },
+  {
+    "name": "Malina",
+    "img": "https://static.thenounproject.com/png/2245276-200.png",
+    "description": "Malina je slatka i kisela",
+    "category": "Voce"
+  },
+  {
+    "name": "Timijan",
+    "img": "https://static.thenounproject.com/png/3216990-200.png",
+    "description": "Timijan je začinska biljka",
+    "category": "Aromatično"
+  },
+  {
+    "name": "Patlidžan",
+    "img": "https://static.thenounproject.com/png/2598579-200.png",
+    "description": "Patlidžan je povrće tamne boje",
+    "category": "Povrce"
+  },
+  {
+    "name": "Kadulja",
+    "img": "https://static.thenounproject.com/png/1581802-200.png",
+    "description": "Kadulja je ljekovita biljka",
+    "category": "Ljekovito"
+  },
+  {
+    "name": "Raž",
+    "img": "https://static.thenounproject.com/png/1732970-200.png",
+    "description": "Raž je žitarica otporna na hladnoću",
+    "category": "Zitarice"
+  },
+  {
+    "name": "Šljiva",
+    "img": "https://static.thenounproject.com/png/3066300-200.png",
+    "description": "Šljiva je sočna i slatka",
+    "category": "Voce"
+  },
+  {
+    "name": "Majčina dušica",
+    "img": "https://static.thenounproject.com/png/1149637-200.png",
+    "description": "Majčina dušica je aromatična biljka",
+    "category": "Aromatično"
+  },
+  {
+    "name": "Krumpir",
+    "img": "https://static.thenounproject.com/png/483308-200.png",
+    "description": "Krumpir je korjenasto povrće",
+    "category": "Povrce"
+  },
+  {
+    "name": "Kantarion",
+    "img": "https://static.thenounproject.com/png/1689703-200.png",
+    "description": "Kantarion je ljekovita biljka",
+    "category": "Ljekovito"
+  },
+  {
+    "name": "Amarant",
+    "img": "https://static.thenounproject.com/png/2479867-200.png",
+    "description": "Amarant je žitarica bogata proteinima",
+    "category": "Zitarice"
+  },
+  {
+    "name": "Breskva",
+    "img": "https://static.thenounproject.com/png/3076191-200.png",
+    "description": "Breskva je sočna i slatka",
+    "category": "Voce"
+  },
+  {
+    "name": "Kim",
+    "img": "https://static.thenounproject.com/png/1630017-200.png",
+    "description": "Kim je začinska biljka s jakim mirisom",
+    "category": "Aromatično"
+  },
+  {
+    "name": "Brokula",
+    "img": "https://static.thenounproject.com/png/440096-200.png",
+    "description": "Brokula je zdravo povrće",
+    "category": "Povrce"
+  },
+  {
+    "name": "Kopriva",
+    "img": "https://static.thenounproject.com/png/3513132-200.png",
+    "description": "Kopriva je ljekovita biljka",
+    "category": "Ljekovito"
+  },
+  {
+    "name": "Ovas",
+    "img": "https://static.thenounproject.com/png/2102075-200.png",
+    "description": "Ovas je žitarica bogata vlaknima",
+    "category": "Zitarice"
+  },
+  {
+    "name": "Jabuka",
+    "img": "https://static.thenounproject.com/png/1971793-200.png",
+    "description": "Jabuka je osvježavajuća i kisela",
+    "category": "Voce"
+  },
+  {
+    "name": "Nana",
+    "img": "https://static.thenounproject.com/png/2092963-200.png",
+    "description": "Nana je aromatična biljka",
+    "category": "Aromatično"
+  },
+  {
+    "name": "Cikla",
+    "img": "https://static.thenounproject.com/png/1263465-200.png",
+    "description": "Cikla je korjenasto povrće crvene boje",
+    "category": "Povrce"
+  },
+  {
+    "name": "Kamilica",
+    "img": "https://static.thenounproject.com/png/2173361-200.png",
+    "description": "Kamilica je ljekovita biljka",
+    "category": "Ljekovito"
+  },
+  {
+    "name": "Ječam",
+    "img": "https://static.thenounproject.com/png/2855020-200.png",
+    "description": "Ječam je žitarica s visokim sadržajem vlakana",
+    "category": "Zitarice"
+  },
+  {
+    "name": "Borovnica",
+    "img": "https://static.thenounproject.com/png/3798967-200.png",
+    "description": "Borovnica je slatka i bogata antioksidansima",
+    "category": "Voce"
+  },
+  {
+    "name": "Origano",
+    "img": "https://static.thenounproject.com/png/1149647-200.png",
+    "description": "Origano je začinska biljka s intenzivnim okusom",
+    "category": "Aromatično"
+  },
+  {
+    "name": "Karfiol",
+    "img": "https://static.thenounproject.com/png/2597255-200.png",
+    "description": "Karfiol je zdravo povrće",
+    "category": "Povrce"
+  },
+  {
+    "name": "Stolisnik",
+    "img": "https://static.thenounproject.com/png/1148725-200.png",
+    "description": "Stolisnik je ljekovita biljka",
+    "category": "Ljekovito"
+  },
+  {
+    "name": "Raž",
+    "img": "https://static.thenounproject.com/png/2750235-200.png",
+    "description": "Raž je žitarica otporna na sušu",
+    "category": "Zitarice"
+  },
+  {
+    "name": "Kivi",
+    "img": "https://static.thenounproject.com/png/2107049-200.png",
+    "description": "Kivi je sočan i kiselkast",
+    "category": "Voce"
+  },
+  {
+    "name": "Lovor",
+    "img": "https://static.thenounproject.com/png/1613795-200.png",
+    "description": "Lovor je aromatičan začin",
+    "category": "Aromatično"
+  },
+  {
+    "name": "Kelj",
+    "img": "https://static.thenounproject.com/png/353417-200.png",
+    "description": "Kelj je povrće bogato hranjivim tvarima",
+    "category": "Povrce"
+  },
+  {
+    "name": "Đumbir",
+    "img": "https://static.thenounproject.com/png/1622857-200.png",
+    "description": "Đumbir je ljekoviti korijen",
+    "category": "Ljekovito"
+  }
+]

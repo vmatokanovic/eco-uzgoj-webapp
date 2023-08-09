@@ -1,0 +1,163 @@
+.comment-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+  background-color: #fff;
+  width: 100%;
+  padding: 2rem 2rem;
+  border-radius: 1rem;
+}
+
+.replies-container .reply-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.replies-container {
+  padding-top: 1rem;
+  display: flex;
+  gap: 4rem;
+}
+
+.replies-line {
+  content: "";
+  padding: 0 0.75rem;
+  background-color: #bfe6cd;
+  border-radius: 1rem;
+}
+
+.comment-rating {
+  line-height: 2rem;
+  font-size: 1.6rem;
+  text-align: center;
+  padding: 1rem 0.5rem;
+  background-color: #eaf7ee;
+  border-radius: 1rem;
+}
+
+.comment-rating p {
+  font-weight: 600;
+  color: #2aab59;
+}
+
+.like-btn {
+  font-size: 2.4rem;
+  color: #95d5ac;
+}
+
+.like-btn:hover {
+  font-size: 2.4rem;
+  color: #2aab59;
+  cursor: pointer;
+}
+
+.comment-data-container {
+  word-break: break-all;
+  background-color: #fff;
+  width: 100%;
+}
+
+.comment-details {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  font-size: 1.8rem;
+  color: #5c5c5c;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #eaf7ee;
+}
+
+.comment-details p {
+  font-weight: 500;
+  color: #333;
+}
+
+.username-and-time {
+  display: flex;
+  gap: 2rem;
+}
+
+.comment-message {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  color: #5c5c5c;
+  font-size: 1.6rem;
+  padding-top: 1rem;
+}
+
+.comment-buttons-container {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.reply-btn {
+  display: flex;
+  align-items: center;
+  color: #2aab59;
+  font-weight: 500;
+  width: fit-content;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.4rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 1.5rem;
+}
+
+.reply-btn:hover {
+  background-color: #eaf7ee;
+  cursor: pointer;
+}
+
+.delete-btn {
+  display: flex;
+  align-items: center;
+  color: #ff6767;
+  font-weight: 500;
+  width: fit-content;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.4rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 1.5rem;
+}
+
+.delete-btn:hover {
+  background-color: #fff0f0;
+  cursor: pointer;
+}
+
+.delete-btn span {
+  font-size: 1.4rem;
+}
+
+.reply-btn span {
+  font-size: 1.4rem;
+}
+
+.filled-icon {
+  color: #2aab59;
+  font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 48;
+}
+
+@media only screen and (max-width: 750px) {
+  .username-and-time {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 570px) {
+  .comment-details {
+    align-items: flex-start;
+    flex-direction: column-reverse;
+  }
+
+  .comment-buttons-container {
+    align-self: flex-end;
+  }
+}
