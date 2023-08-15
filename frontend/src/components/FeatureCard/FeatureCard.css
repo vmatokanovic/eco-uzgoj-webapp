@@ -1,0 +1,28 @@
+.feature-card {
+  width: 100%;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 2rem;
+  border: 2px solid #d4eede;
+}
+
+.feature-card:hover {
+  cursor: pointer;
+}
+
+.feature-card .material-symbols-outlined {
+  display: flex;
+  justify-content: center;
+  font-size: 10rem;
+  color: #2aab59;
+}
+
+.feature-card h3 {
+  border: none;
+}
+
+.feature-card p {
+  width: 100%;
+  font-size: 1.4rem;
+  margin-bottom: 0;
+}

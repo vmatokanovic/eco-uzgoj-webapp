@@ -1,9 +1,21 @@
 .hero-container {
+  position: relative;
+  max-width: 100%;
+  /* background-color: aqua; */
   border-bottom: 1px solid #cacaca;
 }
 
-.benefits-container {
-  background-color: #fff;
+.hero-container .home-page {
+  padding: 0;
+  padding-bottom: 5rem;
+}
+
+.features-container {
+  background-color: #eaf7ee;
+}
+
+.plant-cycle-container {
+  background-color: #2aab59;
 }
 
 .home-page {

@@ -1,27 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
-import { motion, AnimatePresence } from "framer-motion";
-import seed from "../../assets/seed.png";
-import seedPlanting from "../../assets/seed-planting.png";
-import plant from "../../assets/plant.png";
-import vegetables from "../../assets/vegetables-salad.png";
+import heroImage from "../../assets/hero-img.png";
 import "./Hero.css";
 
-const images = [seed, seedPlanting, plant, vegetables];
-
 const Hero = () => {
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 3000);
-
-    return () => {
-      clearInterval(interval);
-    };
-  }, []);
-
   return (
     <div className="hero">
       <div className="hero-text-box">
@@ -38,18 +20,14 @@ const Hero = () => {
         </Link>
       </div>
       <div className="hero-image-box">
-        <AnimatePresence mode="wait">
-          <motion.div
-            className="planting-animation-container"
-            key={currentImageIndex}
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            transition={{ duration: 0.5 }}
-          >
-            <img src={images[currentImageIndex]} alt="Planting cycle" />
-          </motion.div>
-        </AnimatePresence>
+        <img src={heroImage} alt="group of ecological farming pictures" />
+      </div>
+      <div className="plant-species">
+        <div>Voće</div>
+        <div>Povrće</div>
+        <div>Ljekovito</div>
+        <div>Aromatično</div>
+        <div>Žitarice</div>
       </div>
     </div>
   );

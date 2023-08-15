@@ -1,0 +1,30 @@
+.features h1 {
+  font-size: 3.6rem;
+
+  background-image: linear-gradient(45deg, #269a50, #46c976);
+  background-size: 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+
+  padding-block: 3rem;
+}
+
+.features p {
+  width: 50%;
+  font-size: 1.8rem;
+  line-height: 1.6;
+  margin-bottom: 5rem;
+}
+
+.features-css-grid {
+  display: grid;
+  justify-content: center;
+  width: 100%;
+  margin: 2rem auto;
+  grid-template-columns: repeat(auto-fit, 25rem);
+  column-gap: 5rem;
+  row-gap: 5rem;
+}

@@ -5,10 +5,14 @@
 }
 
 .hero {
+  /* position: relative; */
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 50rem;
+  /* background-color: antiquewhite; */
   gap: 9.6rem;
   align-items: center;
+  padding-block: 6rem;
 }
 
 .hero-heading {
@@ -32,6 +36,11 @@
   margin-bottom: 4.8rem;
 }
 
+.hero-image-box img {
+  height: auto;
+  width: 100%;
+}
+
 .get-started-btn:link,
 .get-started-btn:visited {
   font-size: 2.4rem;
@@ -47,6 +56,22 @@
   background-color: #269a50;
 }
 
-.hero-image-box img {
-  max-width: 30rem;
+.hero .plant-species {
+  position: absolute;
+  display: flex;
+  justify-self: center;
+  gap: 3rem;
+  bottom: 0;
+  transform: translateY(50%);
+}
+
+.hero .plant-species div {
+  background-color: #fff;
+  padding: 2rem 3rem;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  border: 1px solid #cacaca;
+  border-radius: 0.5rem;
+  -webkit-box-shadow: 5px 5px 1px 0px #269a50;
+  box-shadow: 5px 5px 1px 0px #269a50;
 }

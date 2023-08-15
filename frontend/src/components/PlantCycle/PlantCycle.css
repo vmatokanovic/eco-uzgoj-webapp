@@ -1,0 +1,44 @@
+.plant-cycle h1 {
+  font-size: 3.6rem;
+
+  background-image: linear-gradient(45deg, #d4eede, #fff);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  background-clip: text;
+  padding-block: 3rem;
+}
+
+.vertical-timeline-plant-cycle {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.phase-card h3 {
+  font-size: 2.4rem;
+  text-align: left;
+  padding: 0;
+  border-bottom: none;
+}
+
+.vertical-timeline-plant-cycle h1 {
+  font-size: 3.6rem;
+
+  background-image: linear-gradient(45deg, #eaf7ee, #fff);
+  background-size: 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+
+  padding-bottom: 3rem;
+}
+.phase-card h2 {
+  font-size: 4.2rem;
+  color: #d4eede;
+  margin-bottom: 1rem;
+}
