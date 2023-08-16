@@ -5,6 +5,7 @@ import FilterMyAds from "../../components/FilterMyAds/FilterMyAds";
 
 import { useEffect, useState } from "react";
 import { useAuthContext } from "../../hooks/useAuthContext";
+import { useAdsContext } from "../../hooks/useAdsContext";
 
 // components
 import AdCard from "../../components/AdCard/AdCard";
@@ -12,6 +13,8 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const AdsMy = () => {
   const { user } = useAuthContext();
+  const { ads, dispatch } = useAdsContext();
+
   const [obj, setObj] = useState([]);
 
   const [filterCategory, setFilterCategory] = useState("Svi oglasi");
@@ -24,6 +27,7 @@ const AdsMy = () => {
         const { data } = await axios.get(url, { headers });
         setObj(data);
         console.log(data);
+        dispatch({ type: "SET_ADS", payload: data.ads });
       } catch (error) {
         console.log(error);
       }
@@ -31,25 +35,7 @@ const AdsMy = () => {
     if (user) {
       getMyAds();
     }
-  }, [user, filterCategory]);
-
-  // // WORKING
-  // useEffect(() => {
-  //   const getMyAds = async () => {
-  //     try {
-  //       const url = `/api/ads/my`;
-  //       const headers = { Authorization: `Bearer ${user.token}` };
-  //       const { data } = await axios.get(url, { headers });
-  //       setObj(data);
-  //       console.log(data);
-  //     } catch (error) {
-  //       console.log(error);
-  //     }
-  //   };
-  //   if (user) {
-  //     getMyAds();
-  //   }
-  // }, [user]);
+  }, [user, filterCategory, dispatch]);
 
   return (
     <div className="my-ads-page-container">
@@ -63,7 +49,7 @@ const AdsMy = () => {
 
       <motion.div layout="position" className="my-ads-container">
         <AnimatePresence>
-          {obj.ads && obj.ads.map((ad) => <AdCard key={ad._id} ad={ad} />)}
+          {ads && ads.map((ad) => <AdCard key={ad._id} ad={ad} />)}
         </AnimatePresence>
       </motion.div>
     </div>

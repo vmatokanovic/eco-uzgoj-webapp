@@ -24,10 +24,7 @@ function App() {
         <NavBar />
         <div className="pages">
           <Routes>
-            <Route
-              path="/"
-              element={user ? <Home /> : <Navigate to="/login" />}
-            />
+            <Route path="/" element={<Home />} />
             <Route
               path="/register"
               element={!user ? <Register /> : <Navigate to="/" />}

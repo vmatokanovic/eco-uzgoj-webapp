@@ -1,5 +1,4 @@
 import React from "react";
-import AdForm from "../../components/AdForm/AdForm";
 import AdFormEdit from "../../components/AdFormEdit/AdFormEdit";
 import "./AdEdit.css";
 

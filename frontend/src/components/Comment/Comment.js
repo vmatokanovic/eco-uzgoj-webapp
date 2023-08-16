@@ -11,7 +11,7 @@ import CommentForm from "../CommentForm/CommentForm";
 
 const Comment = ({ comment }) => {
   const { user } = useAuthContext();
-  const { comments, dispatch } = useCommentsContext();
+  const { dispatch } = useCommentsContext();
 
   const [replyButtonBox, setReplyButtonBox] = useState(false);
   const [error, setError] = useState(null);
@@ -263,6 +263,7 @@ const Comment = ({ comment }) => {
                   placeholder="Write a reply..."
                   submitHandler={replySubmitHandler}
                   setComment={setReply}
+                  error={error}
                 />
               </div>
             )}

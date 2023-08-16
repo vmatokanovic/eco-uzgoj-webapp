@@ -8,7 +8,7 @@ import Dialog from "../Dialog/Dialog";
 
 const Reply = ({ commentId, reply }) => {
   const { user } = useAuthContext();
-  const { comments, dispatch } = useCommentsContext();
+  const { dispatch } = useCommentsContext();
 
   const [dialog, setDialog] = useState({
     message: "",

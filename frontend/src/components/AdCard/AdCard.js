@@ -72,7 +72,10 @@ const AdCard = ({ ad }) => {
       <Link to={`/ad/${ad._id}`}>
         <div className="ad-card-container">
           <div className="ad-img-container">
-            <img src={"http://localhost:3000/uploads/" + ad.img[0]} />
+            <img
+              src={"http://localhost:3000/uploads/" + ad.img[0]}
+              alt="advertise photography"
+            />
           </div>
           <div className="ad-details-container">
             <div className="text-container">

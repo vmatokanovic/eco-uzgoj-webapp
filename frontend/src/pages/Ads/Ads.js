@@ -1,6 +1,5 @@
 import React from "react";
 import "./Ads.css";
-import axios from "axios";
 import Search from "../../components/Search/Search";
 
 import { useEffect, useState } from "react";
@@ -20,24 +19,6 @@ const Ads = () => {
   const [search, setSearch] = useState("");
   const [minPrice, setMinPrice] = useState("");
   const [maxPrice, setMaxPrice] = useState("");
-
-  // //WORKING but with all parameters
-  // useEffect(() => {
-  //   const getAllAds = async () => {
-  //     const response = await fetch(
-  //       `/api/ads?category=${filterCategory.toString()}&search=${search}&minPrice=${minPrice}&maxPrice=${maxPrice}`
-  //     );
-  //     const json = await response.json();
-  //     console.log(json.ads);
-  //     setObj(json);
-
-  //     if (response.ok) {
-  //       dispatch({ type: "SET_ADS", payload: json.ads });
-  //     }
-  //   };
-
-  //   getAllAds();
-  // }, [filterCategory, search, minPrice, maxPrice, dispatch]);
 
   useEffect(() => {
     const getAllAds = async () => {

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useAuthContext } from "../../hooks/useAuthContext";
+import { useNavigate } from "react-router-dom";
 import "./PlantForm.css";
 import PhotosUploader from "../PhotosUploader/PhotosUploader";
 import ReactQuill from "react-quill";
@@ -7,6 +8,8 @@ import "react-quill/dist/quill.snow.css";
 
 const PlantForm = () => {
   const { user } = useAuthContext();
+
+  let navigate = useNavigate();
 
   const [name, setName] = useState("");
   const [addedImgs, setAddedImgs] = useState([]);
@@ -75,6 +78,7 @@ const PlantForm = () => {
       setError(null);
       setEmptyFields([]);
       console.log("New plant added to database!", json);
+      navigate("/plant/" + json._id, { replace: true });
     }
     setIsLoading(false);
   };

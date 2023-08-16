@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useAuthContext } from "../../hooks/useAuthContext";
-import { useAdsContext } from "../../hooks/useAdsContext";
+import { useNavigate } from "react-router-dom";
 import "./AdForm.css";
 import PhotosUploader from "../PhotosUploader/PhotosUploader";
 import ReactQuill from "react-quill";
@@ -8,7 +8,7 @@ import "react-quill/dist/quill.snow.css";
 
 const AdForm = ({ title }) => {
   const { user } = useAuthContext();
-  const { dispatch } = useAdsContext();
+  let navigate = useNavigate();
 
   const [name, setName] = useState("");
   const [addedImgs, setAddedImgs] = useState([]);
@@ -125,7 +125,7 @@ const AdForm = ({ title }) => {
       setError(null);
       setEmptyFields([]);
       console.log("New advertise added!", json);
-      dispatch({ type: "CREATE_AD", payload: json });
+      navigate("/ad/" + json._id, { replace: true });
     }
     setIsLoading(false);
   };

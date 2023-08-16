@@ -28,3 +28,9 @@
   column-gap: 5rem;
   row-gap: 5rem;
 }
+
+@media only screen and (max-width: 1000px) {
+  .features p {
+    width: 100%;
+  }
+}

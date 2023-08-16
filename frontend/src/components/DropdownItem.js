@@ -6,7 +6,7 @@ const DropdownItem = (props) => {
   return (
     <li className="dropdown-item">
       <span className="material-symbols-outlined">{icon}</span>
-      <a>{text}</a>
+      {text}
     </li>
   );
 };

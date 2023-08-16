@@ -1,0 +1,127 @@
+.contact-section-container {
+  display: flex;
+  flex-direction: row;
+  gap: 5rem;
+  margin-block: 5rem;
+}
+
+.contact-section-container .left-side {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 40%;
+  height: fit-content;
+  padding: 2rem;
+  background-color: #fff;
+  font-size: 1.8rem;
+  border: 1px solid #cacaca;
+  border-radius: 1rem;
+  -webkit-box-shadow: 5px 5px 1px 0px #269a50;
+  box-shadow: 10px 10px 1px 0px #269a50;
+}
+
+.contact-section-container .left-side h1 {
+  font-size: 3.6rem;
+
+  background-image: linear-gradient(45deg, #269a50, #46c976);
+  background-size: 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+
+.contact-section-container .left-side form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.contact-section-container .left-side form label {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact-section-container .left-side form textarea {
+  padding: 1rem;
+  resize: none;
+}
+
+.contact-section-container .left-side form input,
+.contact-section-container .left-side form textarea {
+  background-color: #eaf7ee;
+  font-family: "Poppins";
+  font-size: 1.4rem;
+  height: 100%;
+  outline: none;
+  width: 100%;
+  border: none;
+  border-radius: 1rem;
+}
+
+.contact-section-container .left-side form input::placeholder,
+.contact-section-container .left-side form textarea::placeholder {
+  color: #95d5ac;
+  font-weight: 300;
+}
+
+.contact-section-container .left-side form input:focus,
+.contact-section-container .left-side form textarea:focus {
+  background-color: #fff;
+  box-shadow: 0 0 3px #2aab59 inset;
+}
+
+.contact-section-container .left-side form .send-btn {
+  background: #2aab59;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: all ease 200ms;
+}
+
+.contact-section-container .left-side form .send-btn:hover {
+  background-color: #269a50;
+  cursor: pointer;
+}
+
+.contact-section-container .right-side {
+  width: 60%;
+  padding: 10rem;
+}
+
+@media only screen and (max-width: 1000px) {
+  .contact-section-container {
+    flex-direction: column-reverse;
+    gap: 1rem;
+    margin-top: 0;
+  }
+
+  .contact-section-container .left-side {
+    align-self: center;
+    width: 80%;
+  }
+
+  .contact-section-container .right-side {
+    align-self: center;
+    width: 30%;
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .contact-section-container .left-side {
+    align-self: center;
+    width: 90%;
+  }
+
+  .contact-section-container .right-side {
+    align-self: center;
+    width: 80%;
+    padding: 0;
+  }
+}

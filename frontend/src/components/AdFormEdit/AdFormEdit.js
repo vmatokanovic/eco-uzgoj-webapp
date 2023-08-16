@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { useAuthContext } from "../../hooks/useAuthContext";
-import { useAdsContext } from "../../hooks/useAdsContext";
 import PhotosUploader from "../PhotosUploader/PhotosUploader";
 import ReactQuill from "react-quill";
 import "react-quill/dist/quill.snow.css";
@@ -9,7 +8,6 @@ import { useParams } from "react-router-dom";
 
 const AdFormEdit = ({ title }) => {
   const { user } = useAuthContext();
-  const { dispatch } = useAdsContext();
   let navigate = useNavigate();
 
   const { id } = useParams();
@@ -24,8 +22,6 @@ const AdFormEdit = ({ title }) => {
 
   const [error, setError] = useState(null);
   const [emptyFields, setEmptyFields] = useState([]);
-
-  const [adInfo, setAdInfo] = useState(null);
 
   useEffect(() => {
     const fetchAd = async () => {
@@ -144,7 +140,6 @@ const AdFormEdit = ({ title }) => {
       setError(null);
       setEmptyFields([]);
       console.log("Advertise is updated!", json);
-      //   dispatch({ type: "CREATE_AD", payload: json });
       navigate("/ad/" + id, { replace: true });
     }
   };

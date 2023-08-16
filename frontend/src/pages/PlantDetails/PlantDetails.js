@@ -12,7 +12,6 @@ const PlantDetails = () => {
   const { comments, dispatch } = useCommentsContext();
 
   const [plantInfo, setPlantInfo] = useState(null);
-  const [obj, setObj] = useState({});
 
   const [comment, setComment] = useState("");
   const [error, setError] = useState(null);
@@ -31,7 +30,6 @@ const PlantDetails = () => {
       const response = await fetch(`/api/comments/${id}/comments`);
       const json = await response.json();
       console.log(json);
-      setObj(json);
 
       if (response.ok) {
         dispatch({ type: "SET_COMMENTS", payload: json });
@@ -82,55 +80,6 @@ const PlantDetails = () => {
     }
   };
 
-  // const handleSubmit = async (e) => {
-  //   e.preventDefault();
-
-  //   if (!user) {
-  //     setError("You must be logged in");
-  //     return;
-  //   }
-
-  //   const ad = {
-  //     name,
-  //     img: addedImgs,
-  //     description,
-  //     category,
-  //     price,
-  //     contact_number: contactNumber,
-  //   };
-
-  //   const response = await fetch("/api/ads", {
-  //     method: "POST",
-  //     body: JSON.stringify(ad),
-  //     headers: {
-  //       "Content-Type": "application/json",
-  //       // prettier-ignore
-  //       'Authorization': `Bearer ${user.token}`,
-  //     },
-  //   });
-  //   const json = await response.json();
-  //   console.log(json.emptyFields);
-
-  //   if (!response.ok) {
-  //     setError(json.error);
-  //     setEmptyFields(json.emptyFields);
-  //   }
-
-  //   if (response.ok) {
-  //     setName("");
-  //     setAddedImgs([]);
-  //     setDescription("");
-  //     setCategory("");
-  //     setPrice("");
-  //     setContactNumber("");
-
-  //     setError(null);
-  //     setEmptyFields([]);
-  //     console.log("New advertise added!", json);
-  //     dispatch({ type: "CREATE_AD", payload: json });
-  //   }
-  // };
-
   return (
     <div>
       <div className="plant-details-page-container">
@@ -164,6 +113,7 @@ const PlantDetails = () => {
               submitHandler={submitHandler}
               value={comment}
               setComment={(comment) => setComment(comment)}
+              error={error}
             />
           ) : (
             <div className="comments-disabled-container">

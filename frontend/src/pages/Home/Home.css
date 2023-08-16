@@ -3,6 +3,7 @@
   max-width: 100%;
   /* background-color: aqua; */
   border-bottom: 1px solid #cacaca;
+  padding-inline: 1rem;
 }
 
 .hero-container .home-page {
@@ -11,11 +12,24 @@
 }
 
 .features-container {
+  padding-inline: 1rem;
   background-color: #eaf7ee;
 }
 
 .plant-cycle-container {
   background-color: #2aab59;
+  padding-inline: 1rem;
+}
+
+.contact-container {
+  background-color: #eaf7ee;
+  padding-inline: 1rem;
+}
+
+.footer-container {
+  border-top: 1px solid #cacaca;
+  background-color: #fff;
+  padding-inline: 1rem;
 }
 
 .home-page {
