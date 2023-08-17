@@ -3,7 +3,7 @@ const User = require("../models/User");
 const Ad = require("../models/Ad");
 
 const checkSeller = async (req, res, next) => {
-  // Verify authentication
+  // verify authentication
   const { authorization } = req.headers;
 
   if (!authorization) {
@@ -30,10 +30,9 @@ const checkSeller = async (req, res, next) => {
     next();
   } catch (error) {
     if (error.name === "JsonWebTokenError") {
-      // Handle invalid token error
       return res.status(401).json({ error: "Invalid token" });
     }
-    console.log(error); // Log other errors for debugging purposes
+    console.log(error);
     res.status(401).json({ error: "Request is not authorized" });
   }
 };

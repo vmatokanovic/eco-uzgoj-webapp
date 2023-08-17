@@ -5,6 +5,7 @@ const {
   getPlants,
   createPlant,
   getPlant,
+  deletePlant,
 } = require("../controllers/plantController");
 const requireAdmin = require("../middleware/requireAdmin");
 
@@ -16,5 +17,8 @@ router.post("/", requireAdmin, createPlant);
 
 // GET a single plant, access to everyone
 router.get("/:id", getPlant);
+
+// DELETE a plant
+router.delete("/:id", requireAdmin, deletePlant);
 
 module.exports = router;

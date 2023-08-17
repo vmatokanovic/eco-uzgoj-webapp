@@ -1,7 +1,8 @@
 import { Link } from "react-router-dom";
 import { useLogout } from "../../hooks/useLogout";
 import { useAuthContext } from "../../hooks/useAuthContext";
-import DropdownItem from "../DropdownItem";
+import DropdownItem from "../DropdownItem/DropdownItem";
+
 import logo from "../../assets/logo.png";
 import "./NavBar.css";
 import { useEffect, useRef, useState } from "react";
@@ -11,6 +12,19 @@ const NavBar = () => {
   const { user } = useAuthContext();
 
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  // change nav color when scrolling
+  const [color, setColor] = useState(false);
+
+  const changeColor = () => {
+    if (window.scrollY >= 96) {
+      setColor(true);
+    } else {
+      setColor(false);
+    }
+  };
+
+  window.addEventListener("scroll", changeColor);
 
   const [showLinks, setShowLinks] = useState(false);
   const [showSubmenu, setShowSubmenu] = useState(false);
@@ -81,11 +95,11 @@ const NavBar = () => {
   };
 
   return (
-    <nav className="navbar">
+    <nav className={color ? "navbar navbar-bg" : "navbar"}>
       <div className="left-side">
         <Link to="/">
           <img
-            className="logo-navbar"
+            className={color ? "logo-navbar-bg" : "logo-navbar"}
             src={logo}
             alt="Logo, green plant that grow from hand"
           />
@@ -132,19 +146,14 @@ const NavBar = () => {
             ></rect>
           </svg>
         </button>
-        {/* <button
-          className="navbar-menu-btn"
-          onClick={() => {
-            handleMobileMenu();
-            setShowSubmenuPlants(false);
-            setShowSubmenuAds(false);
-          }}
+
+        <ul
+          className={
+            color
+              ? `main-nav-list main-nav-list-bg ${showLinks ? "opened" : ""}`
+              : `main-nav-list ${showLinks ? "opened" : ""}`
+          }
         >
-          <span className="material-symbols-outlined">
-            {showLinks ? "close" : "menu"}
-          </span>
-        </button> */}
-        <ul className={`main-nav-list ${showLinks ? "opened" : ""}`}>
           <li className={` ${windowWidth > 1000 ? "" : "margin-top-1rem"}`}>
             <Link
               className="main-nav-link"

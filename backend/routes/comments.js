@@ -46,7 +46,7 @@ router.patch("/:commentId/unlike", requireAuth, deleteLike);
 // UPDATE a comment and reply inside of it (add like to reply), user must be logged in
 router.patch("/:commentId/replies/:replyId/like", requireAuth, likeReply);
 
-// UPDATE a comment and reply inside of it (add like to reply), user must be logged in
+// UPDATE a comment and reply inside of it (remove like from reply), user must be logged in
 router.patch("/:commentId/replies/:replyId/unlike", requireAuth, unlikeReply);
 
 module.exports = router;

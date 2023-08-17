@@ -64,13 +64,17 @@
 }
 
 .plant-farming-method-container {
-  color: #f5ebe0;
-  background-color: #333;
+  color: #555;
+  background-color: #eaf7ee;
   font-size: 1.8rem;
   line-height: 1.4;
   letter-spacing: 1px;
   padding: 2rem;
   border-radius: 1rem;
+
+  border: 1px solid #cacaca;
+  -webkit-box-shadow: 5px 5px 1px 0px #269a50;
+  box-shadow: 10px 10px 1px 0px #269a50;
 }
 
 .plant-farming-method-container h2 {

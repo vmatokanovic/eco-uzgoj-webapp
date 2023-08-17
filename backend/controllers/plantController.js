@@ -45,7 +45,7 @@ const getPlants = async (req, res) => {
   }
 };
 
-// CREATE new ad
+// CREATE new plant
 const createPlant = async (req, res) => {
   const { name, img, description, category, farming_method } = req.body;
 
@@ -103,8 +103,32 @@ const getPlant = async (req, res) => {
   res.status(200).json(plant);
 };
 
+// DELETE plant
+const deletePlant = async (req, res) => {
+  try {
+    const { id } = req.params;
+    if (!mongoose.Types.ObjectId.isValid(id)) {
+      return res.status(404).json({ error: "No such plant!" });
+    }
+
+    const plant = await Plant.findOneAndDelete({ _id: id });
+
+    if (!plant) {
+      return res.status(404).json({ error: "No such plant in the database" });
+    }
+
+    res.status(200).json(plant);
+  } catch (error) {
+    console.error("Error deleting plant:", error);
+    res
+      .status(500)
+      .json({ error: "An error occurred while deleting the plant" });
+  }
+};
+
 module.exports = {
   getPlants,
   createPlant,
   getPlant,
+  deletePlant,
 };

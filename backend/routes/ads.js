@@ -7,14 +7,11 @@ const {
   deleteAd,
   updateAd,
 } = require("../controllers/adController");
+
 const requireAuth = require("../middleware/requireAuth");
-const requireAdmin = require("../middleware/requireAdmin");
 const checkSeller = require("../middleware/checkSeller");
 
 const router = express.Router();
-
-// require auth for all workout routes
-// router.use(requireAuth);
 
 // GET all ads
 router.get("/", getAds);
@@ -28,7 +25,7 @@ router.get("/:id", getAd);
 // POST a new ad
 router.post("/", requireAuth, createAd);
 
-// DELETE an ad WORKING
+// DELETE an ad
 router.delete("/:id", checkSeller, deleteAd);
 
 // UPDATE an ad

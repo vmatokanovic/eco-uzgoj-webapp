@@ -6,7 +6,6 @@ const imageDownloader = require("image-downloader");
 const multer = require("multer");
 const fs = require("fs");
 
-const workoutRoutes = require("./routes/workouts");
 const userRoutes = require("./routes/user");
 const plantRoutes = require("./routes/plants");
 const commentRoutes = require("./routes/comments");
@@ -26,23 +25,10 @@ app.use((req, res, next) => {
 });
 
 // routes
-app.use("/api/workouts", workoutRoutes);
 app.use("/api/user", userRoutes);
 app.use("/api/plants", plantRoutes);
 app.use("/api/comments", commentRoutes);
 app.use("/api/ads", adRoutes);
-
-// // WORKING but crashes when link is wrong
-// app.post("/upload-by-link", async (req, res) => {
-//   const { link } = req.body;
-//   const newName = "photo" + Date.now() + ".jpg";
-
-//   await imageDownloader.image({
-//     url: link,
-//     dest: __dirname + "/uploads/" + newName,
-//   });
-//   res.json(newName);
-// });
 
 app.post("/upload-by-link", async (req, res) => {
   try {
@@ -86,8 +72,3 @@ mongoose
   .catch((error) => {
     console.log(error);
   });
-
-// // listen for request
-// app.listen(process.env.PORT, () => {
-//   console.log("Listening on port 4000...");
-// });

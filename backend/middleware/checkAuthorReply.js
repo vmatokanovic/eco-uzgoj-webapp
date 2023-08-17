@@ -3,13 +3,11 @@ const User = require("../models/User");
 const Comment = require("../models/Comment");
 
 const checkAuthorReply = async (req, res, next) => {
-  // Verify authentication
+  // verify authentication
   const { authorization } = req.headers;
 
   if (!authorization) {
-    return res
-      .status(401)
-      .json({ error: "Authorization token required [checkAuthorReply]" });
+    return res.status(401).json({ error: "Authorization token required" });
   }
 
   const token = authorization.split(" ")[1];
@@ -20,40 +18,29 @@ const checkAuthorReply = async (req, res, next) => {
 
     const comment = await Comment.findById(req.params.commentId);
     if (!comment) {
-      return res
-        .status(404)
-        .json({ error: "Comment not found [checkAuthorReply]" });
+      return res.status(404).json({ error: "Comment not found" });
     }
 
     const reply = comment.replies.find(
       (reply) => reply._id.toString() === req.params.replyId
     );
     if (!reply) {
-      return res
-        .status(404)
-        .json({ error: "Reply not found [checkAuthorReply]" });
+      return res.status(404).json({ error: "Reply not found" });
     }
 
     if (req.user.username !== reply.username) {
-      return res
-        .status(403)
-        .json({
-          error: "User is not the author of this reply [checkAuthorReply]",
-        });
+      return res.status(403).json({
+        error: "User is not the author of this reply",
+      });
     }
 
     next();
   } catch (error) {
     if (error.name === "JsonWebTokenError") {
-      // Handle invalid token error
-      return res
-        .status(401)
-        .json({ error: "Invalid token [checkAuthorReply]" });
+      return res.status(401).json({ error: "Invalid token" });
     }
-    console.log(error); // Log other errors for debugging purposes
-    res
-      .status(401)
-      .json({ error: "Request is not authorized [checkAuthorReply]" });
+    console.log(error);
+    res.status(401).json({ error: "Request is not authorized" });
   }
 };
 

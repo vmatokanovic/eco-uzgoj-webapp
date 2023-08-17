@@ -91,6 +91,16 @@ const PlantForm = () => {
     "Zitarice",
   ];
 
+  const modules = {
+    toolbar: [
+      [{ header: [2, false] }],
+      ["bold", "italic"],
+      [{ align: ["right", "center", "justify"] }],
+      [{ list: "ordered" }, { list: "bullet" }],
+      ["clean"],
+    ],
+  };
+
   return (
     <form className="create create-ad-form" onSubmit={handleSubmit}>
       <h1>Dodaj novU biljku u bazu podataka</h1>
@@ -156,7 +166,11 @@ const PlantForm = () => {
           emptyFields.includes("farming_method") ? "error" : ""
         }`}
       >
-        <ReactQuill value={farmingMethod} onChange={handleFarmingMethod} />
+        <ReactQuill
+          modules={modules}
+          value={farmingMethod}
+          onChange={handleFarmingMethod}
+        />
       </div>
 
       <button disabled={isLoading} className="ad-form-button-publish">

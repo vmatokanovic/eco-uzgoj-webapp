@@ -2,13 +2,6 @@ const User = require("../models/User");
 const Ad = require("../models/Ad");
 const mongoose = require("mongoose");
 
-// get all ads WORKING
-// const getAds = async (req, res) => {
-//   const ads = await Ad.find({}).sort({ createdAt: -1 });
-
-//   res.status(200).json(ads);
-// };
-
 const getAds = async (req, res) => {
   try {
     const search = req.query.search || "";
@@ -110,11 +103,11 @@ const getUserAds = async (req, res) => {
 const getAd = async (req, res) => {
   const { id } = req.params;
   if (!mongoose.Types.ObjectId.isValid(id)) {
-    return res.status(404).json({ error: "No such workout" });
+    return res.status(404).json({ error: "No such ad" });
   }
   const ad = await Ad.findById(id);
   if (!ad) {
-    return res.status(404).json({ error: "No such workout in database" });
+    return res.status(404).json({ error: "No such ad in database" });
   }
 
   res.status(200).json(ad);
@@ -159,7 +152,7 @@ const createAd = async (req, res) => {
     if (!user) {
       return res.status(404).json({ error: "User not found!" });
     }
-    const seller_name = user.username; // Get the username of the user
+    const seller_name = user.username;
 
     const ad = await Ad.create({
       name,

@@ -20,6 +20,36 @@
   width: 75%;
 }
 
+.ads-not-found-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: fadeIn 1s;
+}
+
+.ads-not-found-animation {
+  width: 30%;
+}
+
+.ads-not-found-text {
+  text-align: center;
+  font-size: 2.8rem;
+  color: #cacaca;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 @media only screen and (max-width: 1040px) {
   .ads-page-container {
     flex-direction: column;
