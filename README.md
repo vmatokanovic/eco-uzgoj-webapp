@@ -18,3 +18,34 @@ Since it's full-stack application, I decided to use MERN stack, which consist of
 - User roles (basic, admin)
 - Admins have extra features to manage database of plants
 - Responsive and modern design
+
+## Screenshots
+![screen1](https://github.com/vmatokanovic/eco-uzgoj-webapp/assets/102720134/f8faaec0-857a-46f1-acb1-1c2af7af3fd9)
+
+![screen2](https://github.com/vmatokanovic/eco-uzgoj-webapp/assets/102720134/d65c271b-9d3b-47e7-addb-3718dedf6312)
+
+![screen3](https://github.com/vmatokanovic/eco-uzgoj-webapp/assets/102720134/9b5551b8-af2f-4708-8c90-6ffd28fc5387)
+
+![screen4](https://github.com/vmatokanovic/eco-uzgoj-webapp/assets/102720134/3adfdeeb-2b63-4d88-b758-cc0672b3a545)
+
+![screen5](https://github.com/vmatokanovic/eco-uzgoj-webapp/assets/102720134/67defa8d-727a-4a94-a7e4-a2dbd337c503)
+
+## Usage
+*You have to install nodemon globally before running project.
+
+*You have to connect to your MongoDB database, because original .env file is not included. It should look like this:
+```
+PORT=4000
+MONGO_URI={Your MondoDB URI}
+SECRET={Your secret phrase}
+```
+
+First, open terminal and go into "backend" folder and run:
+```
+npm run dev
+```
+
+Then, open another terminal and go into "frontend" folder and run:
+```
+npm start
+```
